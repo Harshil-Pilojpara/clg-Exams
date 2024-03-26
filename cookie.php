@@ -1,13 +1,14 @@
 <?php
-$cookie_name = "user";
-$cookie_value = "abcd";
-
-setcookie($cookie_name,$cookie_value,time()+10,"/");
+// $cookie_name = "user";
+// $cookie_value = "abcd";
+echo "welcome to demo of cookie<br>";
+setcookie("category" , "books" , time() + 100, "/");
+echo "cookie is set<br>";
 
 ?>
 
 
-<html>
+<!-- <html>
     <body>
         <?php
         if(!isset($_COOKIE[$cookie_name])){
@@ -21,4 +22,4 @@ setcookie($cookie_name,$cookie_value,time()+10,"/");
         
         ?>
     </body>
-</html>
+</html> -->
