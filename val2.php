@@ -16,38 +16,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["name"])) {
     $nameErr = "Name is required";
   } else {
-    $name = test_input($_POST["name"]);
+    $name = $_POST["name"];
   }
   
   if (empty($_POST["email"])) {
     $emailErr = "Email is required";
   } else {
-    $email = test_input($_POST["email"]);
+    $email = $_POST["email"];
   }
     
   if (empty($_POST["website"])) {
     $website = "";
   } else {
-    $website = test_input($_POST["website"]);
+    $website = $_POST["website"];
   }
 
   if (empty($_POST["comment"])) {
     $comment = "";
   } else {
-    $comment = test_input($_POST["comment"]);
+    $comment = $_POST["comment"];
   }
 
   if (empty($_POST["gender"])) {
     $genderErr = "Gender is required";
   } else {
-    $gender = test_input($_POST["gender"]);
+    $gender = $_POST["gender"];
   }
 }
 
-function test_input($data) {
-  $data = trim($data);
-  return $data;
-}
+// function test_input($data) {
+//   $data = trim($data);
+//   return $data;
+// }
 ?>
 
 <h2>PHP Form Validation Example</h2>

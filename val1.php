@@ -9,17 +9,17 @@
 $name = $email = $gender = $comment = $website = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $name = test_input($_POST["name"]);
-  $email = test_input($_POST["email"]);
-  $website = test_input($_POST["website"]);
-  $comment = test_input($_POST["comment"]);
-  $gender = test_input($_POST["gender"]);
+  $name = $_POST["name"];
+  $email = $_POST["email"];
+  $website = $_POST["website"];
+  $comment = $_POST["comment"];
+  $gender = $_POST["gender"];
 }
 
-function test_input($data) {
-  $data = trim($data);
-  return $data;
-}
+// function test_input($data) {
+//   $data = trim($data);
+//   return $data;
+// }
 ?>
 
 <h2>PHP Form Validation Example</h2>
